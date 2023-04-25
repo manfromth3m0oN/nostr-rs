@@ -1,0 +1,12 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.27.0", features = ["full"] }
+tokio-websockets = { version = "*", default-features = false, features = ["client", "fastrand", "sha1_smol", "native-tls"] }
+http = "0.2.9"
+futures-util = "*"
